@@ -5,21 +5,29 @@ layout: home
 hero:
   name: "Hayase Wiki"
   text: "A Wiki For The Hayase App"
-  tagline: My great project tagline
+  tagline: Learn the core concepts, extensions, and troubleshooting steps for Hayase.
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: About Hayase
+      link: /about
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Getting Started
+      link: /getting-started/installation
+    - theme: alt
+      text: FAQ
+      link: /faq
+    - theme: alt
+      text: Extensions Overview
+      link: /extensions/overview
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: About Hayase
+    details: Understand what Hayase is, what it does, and who it’s for.
+  - title: Getting Started
+    details: Install the app, finish first-time setup, and learn the basics.
+  - title: FAQ
+    details: Quick answers to common questions about usage and features.
+  - title: Extensions Overview
+    details: Explore torrent and NZB extensions and how to enable them.
 ---
 

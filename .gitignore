@@ -10,7 +10,6 @@
 .temp
 .vite_opt_cache
 .vitepress/cache
-.vscode
 /coverage
 client/shared.ts
 node/shared.ts
@@ -22,4 +21,4 @@ pnpm-global
 .temp
 assets/style/sandbox.styl
 temp
-TODOs.md
+todo.md
