@@ -60,7 +60,8 @@ export default defineConfig({
         items: [
           { text: 'Installation', link: '/getting-started/installation' },
           { text: 'First Time Setup', link: '/getting-started/first-time-setup' },
-          { text: 'Basic Usage', link: '/getting-started/basic-usage' }
+          { text: 'Basic Usage', link: '/getting-started/basic-usage' },
+          { text: 'Video Player Guide', link: '/player/player-guide' }
         ]
       },
       {
