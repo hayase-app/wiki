@@ -145,6 +145,8 @@ To use Hayase responsibly:
 
 **You are responsible for your own actions.** Hayase is a tool, and like any tool, it can be used legally or illegally. Choose wisely. None of the lists above are exhaustive; always do your own research, consult legal professionals if needed, and act in accordance with the law.
 
+This document is not legal advice and should not be taken as such. It is for informational purposes only. Always consult a professional for legal questions or concerns.
+
 ***
 
 **Next**: [Installation Guide](getting-started/installation.md)
