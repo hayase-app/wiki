@@ -16,6 +16,7 @@ The manifest is a JSON file that describes the extension and its capabilities, f
     "version": "1.0.0", // Version number for updates
     "type": "torrent", // Type of extension (e.g., "torrent", "nzb")
     "accuracy": "medium", // Search accuracy level (e.g., "low", "medium", "high")
+    "updatePeers": false, // If the user should scrape peer counts themselves from trackers, or if the extension will provide updated peer counts in search results (only for torrent extensions), optional 
     "ratio": 0, // Seeding ratio requirement (0 means no requirement) // Not implemented yet
     "media": "sub", // Type, (e.g., "sub", "dub", "both", "music"), this is purely for user information and doesn't affect search results
     "languages": ["US"], // Array of 2 letter supported languages/country flags (e.g., 'ALL' | 'US' | 'JP' | 'KR' | 'CN' | 'RU' | 'FR' | 'DE' | 'ES'), this is purely for user information and doesn't affect search results
@@ -74,16 +75,18 @@ The `TorrentQuery` and `TorrentResult` types are defined as follows:
 
 ```ts
 interface TorrentQuery {
+  media: any // anilist Media object
   anilistId: number // anilist anime id
   anidbAid?: number // anidb anime id
   anidbEid?: number // anidb episode id
   tvdbId?: number // thetvdb anime id
   tvdbEId?: number // thetvdb episode id
   imdbId?: string // imdb id
-  tmdbId?: number // tmdb anime id
+  tmdbId?: string // tmdb anime id
   titles: string[] // list of titles and alternative titles
-  episode?: number
+  episode: number
   episodeCount?: number // total episode count for the series
+  absoluteEpisodeNumber?: number // absolute episode number, for anime with non-standard episode numbering
   resolution: '2160' | '1080' | '720' | '540' | '480' | ''
   exclusions: string[] // list of keywords to exclude from searches, this might be unsupported codecs (e.g., "x265"), sources (e.g., "web-dl"), or other keywords (e.g., "uncensored")
   type?: 'sub' | 'dub',
