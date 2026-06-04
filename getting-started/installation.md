@@ -141,23 +141,11 @@ Hayase will request these permissions:
 
 ## iOS Limitations
 
-**Hayase is NOT available on iOS** (iPhone/iPad) due to Apple's platform restrictions:
+**Hayase is available on iOS** with restrictions restrictions:
 
-### Why No iOS Version?
-
-1. **No torrenting allowed**: Apple prohibits BitTorrent clients in the App Store
-2. **Sideloading restrictions**: Even sideloaded apps have severe limitations
-3. **Background restrictions**: iOS kills background processes aggressively, breaking torrent connectivity
-4. **WebRTC limitations**: iOS Safari restricts peer-to-peer connections needed for Watch2Gether
-5. **WASI limitations**: iOS has limited support for WebAssembly System Interface, which Hayase relies on
-
-### Alternatives for iOS Users
-
-If you need to use Hayase and only have an iOS device:
-
-* **Use Hayase on another device** and cast to a ChromeCast enabled TV
-* **Access via a computer** (macOS, Windows, Linux) and share your screen
-* **Buy An Android Device** for a portable Hayase experience
+* Requires sideloading (not available on the App Store)
+* Only fully supports iOS 26 and above (older versions may run but are unstable)
+* Due to iOS limitations, the app cannot run in the background, so streaming will stop if you switch apps or lock your phone. This is a fundamental platform limitation that cannot be worked around.
 
 We understand this is frustrating, but these are fundamental iOS platform limitations that cannot be worked around, Apple hates developers.
 

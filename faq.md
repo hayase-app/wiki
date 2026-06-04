@@ -63,23 +63,9 @@ Most modern internet connections are sufficient. See [Bandwidth Requirements](co
 
 ### Can I use this on iPhone?
 
-**No.** Apple's iOS platform restrictions prevent BitTorrent applications from working properly:
-
-* App Store prohibits BitTorrent clients
-* Background process restrictions break connectivity
-* No viable workaround exists
+**Yes\*** Hayase is available on iOS, but due to platform limitations, it requires sideloading. It also only fully supports iOS 26 and above. While the app can run on older versions, stability may be significantly impacted.
 
 See [iOS Limitations](getting-started/installation.md#ios-limitations) for alternatives.
-
-### Why is Hayase using so many connections?
-
-This is intentional and necessary for streaming. Hayase opens 200-500+ peer connections because:
-
-* It needs to find peers with specific pieces quickly
-* Streaming requires pieces RIGHT NOW, not in 10 minutes
-* More connections = better piece availability
-
-Traditional torrent clients use 50-100 connections because they don't have real-time requirements. See [Why Hayase is More Aggressive](core-concepts/torrent-streaming.md#why-hayase-is-more-aggressive-with-peers) for technical details.
 
 ### Can I reduce the upload speed?
 
@@ -193,7 +179,7 @@ Port forwarding allows other peers to connect to you directly:
 
 **Impact:**
 
-* ✅ With port forwarding: 100+ potential peers
+* ✅ With port forwarding: 50+ potential peers
 * ⚠️ Without: Maybe 20-30 peers
 
 For streaming, more peers = more reliable experience. See [Port Forwarding Guide](network/torrenting-issues.md#port-forwarding-why-it-matters).
