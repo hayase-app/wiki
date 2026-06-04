@@ -65,7 +65,7 @@ Most modern internet connections are sufficient. See [Bandwidth Requirements](co
 
 **Yes\*** Hayase is available on iOS, but due to platform limitations, it requires sideloading. It also only fully supports iOS 26 and above. While the app can run on older versions, stability may be significantly impacted.
 
-See [iOS Limitations](getting-started/installation.md#ios-limitations) for alternatives.
+See [iOS Limitations](getting-started/installation.md#ios-limitations) for more information.
 
 ### Can I reduce the upload speed?
 
