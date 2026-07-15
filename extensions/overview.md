@@ -33,12 +33,14 @@ Functional streaming app
 
 ## Extension Types
 
-Hayase supports four types of extensions:
+Hayase supports four types of content source extensions:
 
 * Torrent extensions - See [Torrent Extensions](torrent-extensions.md)
 * NZB extensions - See [NZB Extensions](nzb-extensions.md)
 * Subtitle extensions - See [Subtitle Extensions](subtitle-extensions.md)
 * HTTP extensions - See [HTTP Extensions](http-extensions.md)
+
+Additionally, Hayase supports Chrome extensions as plugins for extended functionality - See [Plugins](plugins.md).
 
 ## Installing and Managing Extensions
 
@@ -52,11 +54,9 @@ Hayase supports four types of extensions:
 4. Wait for download, this might show errors if the extension is invalid, or tries to overwrite an existing extension with the same name.
 5. Extension appears in "Extensions" tab
 
-<!-- **From file:**
+### Installing Plugins
 
-1. Download .hext file (Hayase extension)
-2. Settings → Extensions → Install from File
-3. Select downloaded file -->
+Plugins are Chrome extensions that can be installed from `.crx` files, `.zip` archives, or unpacked directories via `manifest.json`. See [Plugins](plugins.md) for a full guide.
 
 ### Configuring Extensions
 
@@ -313,5 +313,6 @@ Yes! See [Creating Extensions](development/creating-extensions.md) for developer
 * [NZB Extensions](nzb-extensions.md)
 * [Subtitle Extensions](subtitle-extensions.md)
 * [HTTP Extensions](http-extensions.md)
+* [Plugins](plugins.md)
 * [Creating Extensions](development/creating-extensions.md)
 * [Bypassing Blocks](../network/bypassing-blocks.md)
