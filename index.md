@@ -28,6 +28,6 @@ features:
   - title: FAQ
     details: Quick answers to common questions about usage and features.
   - title: Extensions Overview
-    details: Explore torrent and NZB extensions and how to enable them.
+    details: Explore torrent, NZB, subtitle, and HTTP extensions and how to enable them.
 ---
 

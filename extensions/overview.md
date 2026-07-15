@@ -33,10 +33,12 @@ Functional streaming app
 
 ## Extension Types
 
-Hayase supports two fundamentally different types of extensions:
+Hayase supports four types of extensions:
 
 * Torrent extensions - See [Torrent Extensions](torrent-extensions.md)
 * NZB extensions - See [NZB Extensions](nzb-extensions.md)
+* Subtitle extensions - See [Subtitle Extensions](subtitle-extensions.md)
+* HTTP extensions - See [HTTP Extensions](http-extensions.md)
 
 ## Installing and Managing Extensions
 
@@ -309,5 +311,7 @@ Yes! See [Creating Extensions](development/creating-extensions.md) for developer
 
 * [Torrent Extensions](torrent-extensions.md)
 * [NZB Extensions](nzb-extensions.md)
+* [Subtitle Extensions](subtitle-extensions.md)
+* [HTTP Extensions](http-extensions.md)
 * [Creating Extensions](development/creating-extensions.md)
 * [Bypassing Blocks](../network/bypassing-blocks.md)
