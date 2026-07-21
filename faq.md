@@ -389,6 +389,8 @@ Unlike qBit's sequential, this will prioritise downloading torrent pieces direct
 
 See [Android WebView Issues](platform-issues/android/android-troubleshooting.md#webview-issues).
 
+If the update does not help, see [WebView DevTools Flags](platform-issues/android/android-troubleshooting.md#webview-devtools-flags-android-tv) for advanced performance tuning.
+
 ### (Linux) Black screen or won't start
 
 **Likely causes:**

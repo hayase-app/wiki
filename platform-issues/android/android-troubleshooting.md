@@ -34,6 +34,30 @@ Hayase uses WebView for UI.
 1. Update WebView
 2. Restart device
 
+### WebView DevTools Flags (Android TV)
+
+If you have performance issues on Android or AndroidTV:
+
+1. Open Settings → App → Open WebView DevTools
+2. Enable the following flags:
+
+* ignore-gpu-blocklist \[sometimes WebViews disable GPU acceleration entirely, this prevents that]
+* GpuPersistenCache \[might cause subtitles to dissappear]
+* WebViewSurfaceControlForTV \[hardware accelerated overlays]
+* RelaxLimitAImageReaderMaxSizeToOne \[Hayase uses a lot of images, this helps them load faster, but might negatively impact performance]
+* AllowUndamagedNonrootRenderPassToSkip \[prevents unnecessary GPU re-rendering]
+* WebviewAccelerateSmallCanvases \[sometimes subtitles aren't GPU accelerated, this fixes that]
+* RunTasksByBatches \[accumulates tasks before executing them,]
+* UseDMSAAForTiles \[cheaper text and opacity rendering]
+* V8BaselineBatchCompliation \[longer initial load but much better performance]
+* V8ConcurrentSparkplug \[loads JS with multiple CPU threads]
+* V8HighEndAndroid \[this can greatly help performance, but take longer to load, and cause stutters in rare cases, recommended for TVs]
+* V8ScavengerHigherCapacity \[uses more memory, but can eliminate a lot of stutters]
+* PMProcessPriortyPolicy \[better performance scheduling]
+* UseHighPriorityThreadGroup \[allows the app to use high performance threads that are usually reserved for other system tasks]
+
+These flags GREATLY improve performance, and easily **quadruple** framerates on AndroidTV.
+
 ### App Crashes on Launch
 
 **Solutions:**
@@ -101,6 +125,7 @@ Settings → Battery → Battery Optimization
 
 * Lower video quality
 * Close other apps
+* Try the [WebView DevTools flags](#webview-devtools-flags-android-tv) above
 
 **Crashes:**
 

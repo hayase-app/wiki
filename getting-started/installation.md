@@ -132,6 +132,8 @@ Hayase on Android relies on **Android System WebView**. If you experience issues
 
 You need to update your WebView. See [Android WebView Issues](../platform-issues/android/android-troubleshooting.md#webview-issues) for detailed instructions.
 
+If the update does not help, see [WebView DevTools Flags](../platform-issues/android/android-troubleshooting.md#webview-devtools-flags-android-tv) for advanced performance tuning.
+
 **Permissions:**
 
 Hayase will request these permissions:

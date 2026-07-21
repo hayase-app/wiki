@@ -48,6 +48,7 @@ Hayase includes a feature-rich video player with support for multiple playback m
 * Click the fullscreen button or use keyboard shortcut
 * Screen orientation locks to landscape in fullscreen on supported devices
 * Automatic fullscreen on Android TV
+* See [Android Troubleshooting](../platform-issues/android/android-troubleshooting.md) if you have performance issues
 
 ### Subtitles
 
