@@ -132,6 +132,28 @@ Settings → Battery → Battery Optimization
 * Low RAM
 * Consider upgrading device
 
+## NVIDIA Shield Controller Issues
+
+### Buttons Do Not Work (Select, Guide, Others)
+
+NVIDIA makes a system modification. It remaps some controller buttons on the Shield TV.
+
+To fix the issue, disable the `com.nvidia.shieldtech.hooks` package.
+
+**Method 1 - ADB command:**
+
+```
+adb shell pm disable-user com.nvidia.shieldtech.hooks
+```
+
+**Method 2 - ADB TV App Manager:**
+
+1. Open the ADB TV App Manager app
+2. Find the package `com.nvidia.shieldtech.hooks`
+3. Select "Disable"
+
+After you disable the package, restart the NVIDIA Shield TV.
+
 ***
 
 **Related:** [Installation](../../getting-started/installation.md#mobile-android)
