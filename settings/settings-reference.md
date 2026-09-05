@@ -15,6 +15,8 @@ This page provides a comprehensive reference for all settings available in Hayas
   * English Stylised
   * Native Stylised
 * **Adult Content**: Shows hentai content on AniList (account-level setting)
+* **Client ID**: Client ID used for AniList authentication and API access
+  * Requires this Redirect URL in the AniList client: `https://hayase.app/#/authorize?al`
 
 ### Kitsu
 
@@ -23,6 +25,13 @@ This page provides a comprehensive reference for all settings available in Hayas
 ### MyAnimeList
 
 * **Enable Sync**: Enable synchronization with your MyAnimeList account
+* **Client ID**: Client ID used for MyAnimeList authentication and API access
+ 
+### Simkl
+
+* **Enable Sync**: Enable synchronization with your Simkl account
+* **Client ID**: Client ID used for Simkl authentication and API access
+* **Client Secret**: Client Secret used for Simkl token exchange (found in Simkl de app settings)
 
 ### Local Library
 
